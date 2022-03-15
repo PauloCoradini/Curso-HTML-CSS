@@ -78,12 +78,11 @@ footer {
     font-size: 15px;
     margin: 30px;
 }
-
+/* contato */
 main {
     width: 940px;
     margin: 0 auto;
 }
-
 form {
     margin: 40px 0;
 }
@@ -117,7 +116,7 @@ form label, form legend {
     background: #f76300fd;
     transform: scale(1.1);
 }
-
+/* tabela contato */
 table {
     margin: 40px 0 40px;
 }
@@ -130,5 +129,30 @@ td, th {
     border: 1px solid black;
     padding: 8px 15px;
 }
-
-
+/* pagina inicial */
+.banner {
+    width: 100%;
+}
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.principal p {
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em {
+    font-style: italic;
+}
+.imgbeneficios {
+    width: 60%;
+}
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
