@@ -211,11 +211,15 @@ td, th {
 }
 
 @media screen and (max-width: 480px) {
-    .caixa-topo, .principal, .conteudo-beneficios, .mapa, .video, form, .produtos {
+    .caixa-topo, .principal, .mapa, .video, form, .produtos, .beneficios, .conteudo-beneficios{
         width: auto;
     }
-    .lista-beneficios, .formulario {
+    .formulario {
         padding-left: 20px;
+    }
+    .imgbeneficios {
+        width: auto;
+        display: block;
     }
     .produtos li{
         display: block;
