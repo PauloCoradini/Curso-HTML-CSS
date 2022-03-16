@@ -1,5 +1,5 @@
 body {
-	font-family: Arial, Helvetica, sans-serif
+	font-family: 'Fredoka', sans-serif;
 }
 header {
     background: #a1a1a1f1;
@@ -17,13 +17,13 @@ nav {
 }
 nav li {
     display: inline;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 20px;
 }
 nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 22px;
     text-decoration: none;
 }
 nav a:hover {
@@ -80,11 +80,11 @@ footer {
 }
 /* contato */
 main {
-    width: 940px;
-    margin: 0 auto;
+    background: linear-gradient(#fefefe,#464545);
 }
 form {
-    margin: 40px 0;
+    width: 940px;
+    margin: 0 auto;
 }
 form label, form legend {
     display: block;
@@ -95,7 +95,7 @@ form label, form legend {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: 100%;
 }
 .checkbox {
     margin: 20px 0;
@@ -111,6 +111,7 @@ form label, form legend {
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+    margin-left: 15px;
 }
 .enviar:hover {
     background: #f76300fd;
@@ -118,7 +119,11 @@ form label, form legend {
 }
 /* tabela contato */
 table {
-    margin: 40px 0 40px;
+    margin-top: 20px;
+}
+.topo-tabela {
+    padding-top: 40px;
+    font-size: 20px;
 }
 thead {
     background: grey;
@@ -129,9 +134,17 @@ td, th {
     border: 1px solid black;
     padding: 8px 15px;
 }
+.formulario {
+    padding: 40px 0 40px 0;
+}
 /* pagina inicial */
 .banner {
     width: 100%;
+}
+.principal {
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
 }
 .titulo-principal {
     text-align: center;
@@ -148,11 +161,86 @@ td, th {
 .principal em {
     font-style: italic;
 }
-.imgbeneficios {
-    width: 60%;
-}
 .utensilios {
     width: 120px;
     float: left;
     margin: 0 20px 20px 0;
+}
+/*mapa*/
+.mapa {
+    padding: 3em;
+    width: 940px;
+    margin: 0 auto;
+}
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em;
+}
+.video {
+    width: 640px;
+    margin: 2em auto 0 auto;
+}
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.imgbeneficios {
+    width: 60%;
+    transition: 450ms;
+    opacity: 1;    
+}
+.imgbeneficios:hover {
+    opacity: 0.3;
+}
+.beneficios {
+    padding: 3em 0;
+}
+.itens {
+    line-height: 1.5em;
+}
+.itens::before {
+    content: "✹ ";
+}
+.itens:first-child {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa-topo, .principal, .conteudo-beneficios, .mapa, .video, form, .produtos {
+        width: auto;
+    }
+    .lista-beneficios, .formulario {
+        padding-left: 20px;
+    }
+    .produtos li{
+        display: block;
+        margin: 40px 40px 40px 40px;
+        width: auto;
+    }
+    table {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .input-padrao {
+        width: calc(100% - 80px);
+    }
+    .topo-tabela {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    h1, .enviar, table {
+        text-align: center;
+    }
+    nav {
+        position: static;
+        text-align: center;
+    }
+    .lista-beneficios, .imgbeneficios {
+        width: 100%;
+    }
 }

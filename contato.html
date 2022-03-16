@@ -2,9 +2,13 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
 		<title>Barbearia Alura - Contato</title>
         <link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -21,7 +25,7 @@
             </div>
         </header>
 
-        <main>
+        <main class="formulario">
             <form>
                 <label for="nomeSobrenome">Nome e sobrenome:*</label>
                 <input type="text" id="nomeSobrenome" class="input-padrao" required>
@@ -62,6 +66,7 @@
                 <input type="submit" name="contato" value="Enviar formulário" class="enviar">
 
                 <table>
+                    <p class="topo-tabela">Nossos horários:</p>
                     <thead>
                         <tr>
                             <th>Dia</th>
